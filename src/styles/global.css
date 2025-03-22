@@ -18,6 +18,11 @@ body {
   margin: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .container-fluid {
   margin-left: 20%;
   margin-right: 10%;

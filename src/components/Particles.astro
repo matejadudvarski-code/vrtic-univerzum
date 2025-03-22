@@ -1,0 +1,32 @@
+---
+import AstroParticles from 'astro-particles';
+---
+
+<AstroParticles
+id="tsparticles"
+options={{
+  particles: {
+    number: {
+      value: 50,
+    },
+    color: {
+      value: "#ff0000", // Red particles
+    },
+    shape: {
+      type: "circle",
+    },
+    size: {
+      value: 5,
+    },
+  },
+}}
+style={{
+  position: 'absolute',
+  top: '0',
+  left: '0',
+  width: '100%',
+  height: '100%',
+  zIndex: -1,
+  border: '1px solid red', // Add a border for visibility
+}}
+/>

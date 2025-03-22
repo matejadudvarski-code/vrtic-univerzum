@@ -1,0 +1,104 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0e0e0, #002349); /* Light to Dark Gradient */
+  height: 100vh;
+  margin: 0;
+}
+
+.container-fluid {
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+.navbar {
+  background-color: #002349;
+}
+
+.navbar, .navbar-nav .nav-link, .navbar-brand {
+  color: white !important; 
+}
+
+
+.navbar-nav .nav-link.active {
+  border-bottom: 3px solid #ffd700; 
+  padding-bottom: 0.3rem;
+  border-radius: 10px; 
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #6c757d; 
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #EF036C; 
+  color: white; 
+}
+
+.nav-item {
+  font-size: 1.4em; 
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 2.2rem; 
+}
+
+.navbar-toggler {
+  padding: 0.5rem;
+  color: white;
+}
+
+.navbar-toggler:focus {
+  outline: none; 
+}
+
+/* Initial Arrow Down Icon */
+.navbar-toggler-icon {
+  transition: transform 0.3s ease; /* Smooth transition for flipping */
+}
+
+/* When the navbar is collapsed, show the arrow pointing down */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(0deg); /* No rotation when collapsed (pointing down) */
+}
+
+/* When the navbar is expanded, rotate the arrow to point up */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(180deg); /* Rotate 180 degrees to point up */
+}
+
+/* Remove the default hamburger icon */
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none; /* Hide the default hamburger icon */
+}
+
+/* Glow effect */
+.glow {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.text-vrtic {
+  color: #002349;
+}
+
+.text-univerzum {
+  color: #EF036C;
+}
+
+.text-vrtic:hover, .text-univerzum:hover {
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.3);
+}

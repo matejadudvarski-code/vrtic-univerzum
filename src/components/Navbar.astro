@@ -1,0 +1,87 @@
+---
+import "../styles/global.css";
+---
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/univerzum-logo.png" alt="Univerzum Logo" style="width: 220px;">
+    </a>
+
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-chevron-down navbar-toggler-icon"></i> <!-- Single Arrow Icon -->
+    </button>
+
+    <!-- Navbar Links on the Right -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Home Link -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+
+        <!-- Dropdown for "O nama" -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOna" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            O nama
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownOna">
+            <li><a class="dropdown-item" href="/about">Prostor</a></li>
+            <li><a class="dropdown-item" href="/team">Galerija</a></li>
+            <li><a class="dropdown-item" href="/history">Zaposleni</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown for "Usluge" -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsluge" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Usluge
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownUsluge">
+            <li><a class="dropdown-item" href="/service1">Program</a></li>
+            <li><a class="dropdown-item" href="/service2">Upis Dece</a></li>
+            <li><a class="dropdown-item" href="/service3">Izleti</a></li>
+          </ul>
+        </li>
+
+        <!-- "Kutak Za Roditelje" Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="/kutak-za-roditelje">Kutak Za Roditelje</a>
+        </li>
+
+        <!-- "Kontakt" Link -->
+         <li class="nav-item">
+          <a class="nav-link" href="/contact">Kontakt</a>
+         </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  /* Fade In and Out effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+</style>

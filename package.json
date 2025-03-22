@@ -9,7 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^4.2.1",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@yatoday/astro-ui": "^0.0.5",
     "astro": "^5.5.3",
+    "astro-navbar": "^2.3.9",
+    "astro-particles": "^2.10.0",
+    "bootstrap": "^5.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "vrtic-univerzum": "file:"
   }
 }

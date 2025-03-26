@@ -1,0 +1,75 @@
+<section class="container my-5">
+    <h1 class="text-center mb-4 fs-1">O Nama</h1>
+    <ul class="nav nav-tabs" id="contentTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active custom-tab" id="prostor-tab" data-bs-toggle="tab" data-bs-target="#prostor" type="button" role="tab">Prostor</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link custom-tab" id="zaposleni-tab" data-bs-toggle="tab" data-bs-target="#zaposleni" type="button" role="tab">Zaposleni</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link custom-tab" id="galerija-tab" data-bs-toggle="tab" data-bs-target="#galerija" type="button" role="tab">Galerija</button>
+      </li>
+    </ul>
+    
+    <div class="tab-content mt-4 text-center" id="contentTabsContent">
+      <div class="tab-pane fade show active" id="prostor" role="tabpanel">
+        <div class="d-flex justify-content-center">
+        <div id="prostorCarousel" class="carousel slide shadow-lg rounded border-warning" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="20000">
+              <img src="/images/dvoriste.webp" class="d-block mx-auto rounded shadow" alt="Prostor 1" style="max-width: 80%; height: auto; object-fit: cover;">
+            </div>
+            <div class="carousel-item" data-bs-interval="20000">
+              <img src="/images/atelje.webp" class="d-block mx-auto rounded shadow" alt="Prostor 2" style="max-width: 80%; height: auto; object-fit: cover;">
+            </div>
+            <div class="carousel-item" data-bs-interval="20000">
+              <img src="/images/montesori kabinet2.webp" class="d-block mx-auto rounded shadow" alt="Prostor 3" style="max-width: 80%; height: auto; object-fit: cover;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#prostorCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#prostorCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        </div>
+        <p class="mt-4">Univerzum je vrtić koji raste zajedno sa decom, prati njihov razvoj i potrebe, inspiriše, podstiče na istraživanje i komunikaciju. To je dobro i sigurno mesto gde se poštuju sloboda govora i izbora, otvorenost i jednakost.
+
+          Mi verujemo u bezgraničnost dečijih mogućnosti za pravilan i pozitivan rast i razvoj. Znamo da svako dete ima sposobnost da se oseti srećno i uspešno. Zato želimo da podelimo naša znanjai prenesemo iskustva, kako bismo pomogli malim ljudima da ostanu srećni.
+          
+          Naš zadatak je da svakom detetu omogućimo uslove da prepozna sopstvene kapacitete i da u njih veruje; da stvorimo okruženje u kom se dete oseća voljeno i uči da voli, u kome je poštovano i uči da poštuje sebe i druge. Svakom detetu pristupamo sa pažnjom i uverenjem da je ličnost za sebe, sa jedinstvenim potrebama, sposobnostima i razvojnim karakteristikama. Verujemo da je svako dete posebno i neponovljivo biće i zato mu pružamo individualno usmeren i ličan pristup.Želimo da svako dete živi i raste sa uverenjem da je baš takvo kakvo jeste dovoljno dobro i dovoljno vredno da od nas odraslih nasledi "univerzum". 
+          
+          Univerzum nije samo mesto gde se odrasta, uči i sprema za neki budući život, već je i društvo istraživača i pustolova. Ovde se živi detinjstvo i stiču znanja i sposobnosti koja su deci korisna i vredna, kako danas, tako i za sto godina.
+        </p>
+  </div>
+
+
+      <div class="tab-pane fade" id="zaposleni" role="tabpanel">
+        <img src="/images/zaposleni.jpg" class="img-fluid rounded shadow" alt="Zaposleni">
+        <p class="mt-2">Upoznajte naše zaposlene i njihov rad.</p>
+      </div>
+
+
+      <div class="tab-pane fade" id="galerija" role="tabpanel">
+        <img src="/images/galerija.jpg" class="img-fluid rounded shadow" alt="Galerija">
+        <p class="mt-2">Pregledajte naše trenutke u galeriji.</p>
+      </div>
+    </div>
+
+
+  </section>
+  
+
+  <style>
+    /* Change tab text to black */
+    .custom-tab {
+      color: black !important;
+    }
+    
+    .custom-tab.active {
+      color: black !important;
+      border-bottom: 3px solid gold; /* Highlight active tab */
+    }
+  </style>

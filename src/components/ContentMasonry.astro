@@ -1,22 +1,78 @@
 <section class="container my-5">
-    <h2 class="text-center mb-4">Naša Galerija</h2>
-    <div class="row g-3">
-      <div class="col-md-6">
-        <img src="/images/gallery1.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1">
-        <p class="text-center mt-2">Opis slike 1</p>
-      </div>
-      <div class="col-md-3">
-        <img src="/images/gallery2.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
-        <p class="text-center mt-2">Opis slike 2</p>
-      </div>
-      <div class="col-md-3">
-        <img src="/images/gallery3.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
-        <p class="text-center mt-2">Opis slike 3</p>
-      </div>
-      <div class="col-md-6">
-        <img src="/images/gallery4.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
-        <p class="text-center mt-2">Opis slike 4</p>
+  <div class="row align-items-center" style="margin-top: 200px;">
+    <!-- Left Side: Title + Text -->
+    <div class="col-lg-5 ">
+      <h2 class="mb-4">O Nama</h2>
+      <p>
+        Univerzum je vrtić koji raste zajedno sa decom, prati njihov razvoj i potrebe, inspiriše, podstiče na istraživanje i komunikaciju. To je dobro i sigurno mesto gde se poštuju sloboda govora i izbora, otvorenost i jednakost.
+
+          Mi verujemo u bezgraničnost dečijih mogućnosti za pravilan i pozitivan rast i razvoj. Znamo da svako dete ima sposobnost da se oseti srećno i uspešno. Zato želimo da podelimo naša znanjai prenesemo iskustva, kako bismo pomogli malim ljudima da ostanu srećni.
+          
+          Naš zadatak je da svakom detetu omogućimo uslove da prepozna sopstvene kapacitete i da u njih veruje; da stvorimo okruženje u kom se dete oseća voljeno i uči da voli, u kome je poštovano i uči da poštuje sebe i druge. Svakom detetu pristupamo sa pažnjom i uverenjem da je ličnost za sebe, sa jedinstvenim potrebama, sposobnostima i razvojnim karakteristikama. Verujemo da je svako dete posebno i neponovljivo biće i zato mu pružamo individualno usmeren i ličan pristup.Želimo da svako dete živi i raste sa uverenjem da je baš takvo kakvo jeste dovoljno dobro i dovoljno vredno da od nas odraslih nasledi "univerzum". 
+          
+          Univerzum nije samo mesto gde se odrasta, uči i sprema za neki budući život, već je i društvo istraživača i pustolova. Ovde se živi detinjstvo i stiču znanja i sposobnosti koja su deci korisna i vredna, kako danas, tako i za sto godina.
+      </p>
+    </div>
+
+    <!-- Right Side: Masonry Images -->
+    <div class="col-lg-7">
+      <div class="row">
+        <!-- Top Large Image -->
+        <div class="col-12 mb-3">
+          <img src="/images/crtanje.jpg" class="img-fluid rounded" alt="Big Image">
+        </div>
+        <!-- Bottom Two Images -->
+         <div class="bottom-images">
+        <div class="col-8">
+          <img src="/images/kolaz.jpg" class="img-fluid rounded" alt="Small Image 1">
+        </div>
+        <div class="col-4">
+          <img src="/images/kocke.jpg" class="img-fluid rounded" alt="Small Image 2">
+        </div>
+        </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>
+
+<style>
+  section {
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .col-lg-5, .col-lg-7 {
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
+}
+.bottom-images {
+  display: flex;
+  gap: 10px; /* Space between images */
+}
+
+.bottom-images img {
+  flex: 1; /* Forces equal width */
+  height: 100%; /* Ensures they stay the same height */
+  object-fit: cover; /* Prevents distortion */
+}
+</style>

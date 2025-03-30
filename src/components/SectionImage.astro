@@ -1,0 +1,80 @@
+---
+import "../styles/global.css"; 
+---
+
+<section class="image-section">
+  <div class="image-container">
+    <div class="title-card">
+      <h3 class="title-text">Usluge</h3>
+    </div>
+  </div>
+</section>
+
+<style>
+
+  .image-section {
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+  }
+
+  
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/olovke.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+  }
+
+  
+  .title-card {
+    position: absolute;
+    bottom: -40px;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    width: 15%; 
+    margin-right: 20%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-card:hover {
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); 
+    transition: all 0.3s ease;
+  }
+  .title-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 50px 0 50px;
+    text-align: center;
+    color: #032D6C; 
+  }
+
+  
+  @media (max-width: 768px) {
+    .title-text {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title-text {
+      font-size: 1.2rem;
+    }
+  }
+</style>
+
+  

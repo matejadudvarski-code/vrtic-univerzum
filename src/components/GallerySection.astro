@@ -1,0 +1,104 @@
+---
+import "../styles/global.css";
+
+const slides = Array.from({ length: 11 }, (_, index) => ({
+  src: `/images/carousel_images/carousel${index + 1}.jpg`,
+  title: `Slide ${index + 1} Title`
+}));
+---
+
+<section class="carousel-section container-fluid">
+  <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
+    
+    <!-- Indicators (Dots) -->
+    <div class="carousel-indicators">
+      {slides.map((_, index) => (
+        <button
+          type="button"
+          data-bs-target="#customCarousel"
+          data-bs-slide-to={index}
+          class={index === 0 ? "active" : ""}
+          aria-current={index === 0 ? "true" : "false"}
+          aria-label={`Slide ${index + 1}`}
+        ></button>
+      ))}
+    </div>
+
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+      {slides.map((slide, index) => (
+        <div class={`carousel-item ${index === 0 ? "active" : ""}`}>
+          <img src={slide.src} class="d-block w-100" alt={`Slide ${index + 1}`} />
+        </div>
+      ))}
+    </div>
+
+    <!-- Dynamic Title Display -->
+    <div id="carouselTitle" class="carousel-title">{slides[0].title}</div>
+
+    <!-- Navigation Arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    
+    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>
+
+<script>
+    import carouselScript from "../scripts/carousel.js";
+    carouselScript();
+  </script>
+
+
+<style>
+  .carousel-section {
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    background-color: #BA96EC;
+  }
+
+  .carousel img {
+    max-height: 900px;
+    object-fit: cover;
+  }
+
+  .carousel-title {
+    position: absolute;
+    top: 90%; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    bottom: 20px;
+    color: #000;
+    padding: 10px 20px;
+  }
+
+  .carousel-indicators button {
+    background-color: #fff;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators .active {
+    background-color: #BA96EC;
+  }
+
+  @media (max-width: 768px) {
+    .carousel img {
+      max-height: 400px;
+    }
+    .carousel-caption {
+      font-size: 14px;
+    }
+  }
+  </style>

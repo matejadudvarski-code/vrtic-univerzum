@@ -1,16 +1,35 @@
-<footer class="text-white py-4" style="background-color: #002349;">
+---
+import "../styles/global.css";
+---
+
+<footer class="text-white py-4" style="background-color: #9760E3;">
     <div class="container d-flex justify-content-between align-items-center">
-      <!-- Left Text (e.g., Copyright) -->
+      
       <div class="text-start">
+        <img src="/images/univerzum-logo.png" alt="Vrtić Univerzum Logo" class="img-fluid" style="max-width: 80%; height: auto;">
+        
+      </div>
+  
+      
+      <div class="text-center">
+        <h1 class="mb-3 footer-text-header">Kontakt</h1>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-geo-alt me-2"></i> 
+          <p class="mb-0 footer-text">Bulevar Mihaila Pupina 165a</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-envelope me-2"></i> 
+          <p class="mb-0 footer-text">info@vrticuniverzum.com</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-telephone me-2"></i> 
+          <p class="mb-0 footer-text">011 2270632   064/6414766</p>
+        </div>
+        <br><br>
         <p class="mb-0 footer-text" >&copy; 2025 Vrtić Univerzum. All Rights Reserved.</p>
       </div>
   
-      <!-- Center Logo -->
-      <div class="text-center">
-        <img src="/images/univerzum-logo.png" alt="Vrtić Univerzum Logo" class="img-fluid" style="max-width: 80%; height: auto;">
-      </div>
-  
-      <!-- Right Image -->
+      
       <div class="text-end">
         <img src="/images/logo_MP_w3.png" alt="Footer Image" class="img-fluid" style="max-width: 80%; height: auto;">
       </div>
@@ -18,12 +37,13 @@
   </footer>
   
   <style>
-    .footer {
-      background-color: #9760E3;
-    }
     /* Reduce text size on smaller screens */
     .footer-text {
       font-size: 1rem;
+    }
+
+    .footer-text-header {
+      font-size: 2rem; 
     }
   
     @media (max-width: 768px) {

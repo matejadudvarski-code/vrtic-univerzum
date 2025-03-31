@@ -1,0 +1,88 @@
+---
+import "../styles/global.css";
+---
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <!-- Title Card -->
+    <div class="title-card">
+      <h2>Kontakt</h2>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" name="ime" placeholder="Ime" required>
+        <input type="text" name="prezime" placeholder="Prezime" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="predmet" placeholder="Predmet" required>
+      </div>
+      <div class="form-group">
+        <textarea name="poruka" placeholder="Poruka" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Pošalji</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+
+  .title-card {
+    background-color: #032D6C;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  .form-group textarea {
+    resize: none;
+  }
+
+  .submit-btn {
+    background-color: #9760E3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background-color: #7640c0;
+  }
+
+  @media (max-width: 768px) {
+    .form-group {
+      flex-direction: column;
+    }
+  }
+</style>

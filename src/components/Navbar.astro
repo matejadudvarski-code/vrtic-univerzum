@@ -24,37 +24,32 @@ import "../styles/global.css";
 
         <!-- Dropdown for "O nama" -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOna" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#onama" id="navbarDropdownOna" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             O nama
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownOna">
-            <li><a class="dropdown-item" href="/about">Prostor</a></li>
-            <li><a class="dropdown-item" href="/team">Galerija</a></li>
-            <li><a class="dropdown-item" href="/history">Zaposleni</a></li>
+            <li><a class="dropdown-item" href="#galerija">Galerija</a></li>
+            <li><a class="dropdown-item" href="#zaposleni">Zaposleni</a></li>
           </ul>
         </li>
 
-        <!-- Dropdown for "Usluge" -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsluge" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Usluge
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownUsluge">
-            <li><a class="dropdown-item" href="/service1">Program</a></li>
-            <li><a class="dropdown-item" href="/service2">Upis Dece</a></li>
-            <li><a class="dropdown-item" href="/service3">Izleti</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#usluge">Usluge</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#program">Program</a>
         </li>
 
         <!-- "Kutak Za Roditelje" Link -->
         <li class="nav-item">
-          <a class="nav-link" href="/kutak-za-roditelje">Kutak Za Roditelje</a>
+          <a class="nav-link" href="#kutakzaroditelje">Kutak Za Roditelje</a>
         </li>
 
         
       </ul>
     </div>
-    <a href="/contact" class="btn text-white fs-5 px-4 py-2" 
+    <a href="#contact" class="btn text-white fs-5 px-4 py-2" 
        style="background-color: #032D6C; border-radius: 20px; margin-right: 20px;">
       Kontakt
     </a>
@@ -62,6 +57,12 @@ import "../styles/global.css";
 </nav>
 
 <style>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
   .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     animation: fadeIn 0.3s ease-in-out;
   }

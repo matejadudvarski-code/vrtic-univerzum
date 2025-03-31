@@ -1,7 +1,7 @@
-<section class="container my-5">
+<section class="container my-5" id="onama">
   <div class="row align-items-center" style="margin-top: 200px;">
     <!-- Left Side: Title + Text -->
-    <div class="col-lg-5 ">
+    <div class="col-lg-5 about-wrapper">
       <h2 class="mb-4">O Nama</h2>
       <p>
         Univerzum je vrtić koji raste zajedno sa decom, prati njihov razvoj i potrebe, inspiriše, podstiče na istraživanje i komunikaciju. To je dobro i sigurno mesto gde se poštuju sloboda govora i izbora, otvorenost i jednakost.
@@ -19,15 +19,15 @@
       <div class="row">
         <!-- Top Large Image -->
         <div class="col-12 mb-3">
-          <img src="/images/crtanje.jpg" class="img-fluid rounded" alt="Big Image">
+          <img src="/images/crtanje.jpg" class="img-fluid rounded" alt="Big Image" loading="lazy">
         </div>
         <!-- Bottom Two Images -->
          <div class="bottom-images">
         <div class="col-8">
-          <img src="/images/kolaz.jpg" class="img-fluid rounded" alt="Small Image 1">
+          <img src="/images/kolaz.jpg" class="img-fluid rounded" alt="Small Image 1" loading="lazy">
         </div>
         <div class="col-4">
-          <img src="/images/kocke.jpg" class="img-fluid rounded" alt="Small Image 2">
+          <img src="/images/kocke.jpg" class="img-fluid rounded" alt="Small Image 2" loading="lazy">
         </div>
         </div>
       </div>
@@ -75,5 +75,11 @@ img {
   flex: 1; /* Forces equal width */
   height: 100%; /* Ensures they stay the same height */
   object-fit: cover; /* Prevents distortion */
+}
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    margin-top: 300px;
+  }
 }
 </style>

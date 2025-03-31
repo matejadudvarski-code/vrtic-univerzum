@@ -3,11 +3,11 @@ import "../styles/global.css";
 
 const slides = Array.from({ length: 11 }, (_, index) => ({
   src: `/images/carousel_images/carousel${index + 1}.jpg`,
-  title: `Slide ${index + 1} Title`
+  title: `Senzorna Soba`
 }));
 ---
 
-<section class="carousel-section container-fluid">
+<section class="carousel-section container-fluid" id="galerija">
   <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
     
     <!-- Indicators (Dots) -->
@@ -28,7 +28,7 @@ const slides = Array.from({ length: 11 }, (_, index) => ({
     <div class="carousel-inner">
       {slides.map((slide, index) => (
         <div class={`carousel-item ${index === 0 ? "active" : ""}`}>
-          <img src={slide.src} class="d-block w-100" alt={`Slide ${index + 1}`} />
+          <img src={slide.src} class="d-block w-100" alt={`Slide ${index + 1}`} loading="lazy"/>
         </div>
       ))}
     </div>
@@ -95,10 +95,12 @@ const slides = Array.from({ length: 11 }, (_, index) => ({
 
   @media (max-width: 768px) {
     .carousel img {
+      min-height: 400px;
       max-height: 400px;
     }
-    .carousel-caption {
+    .carousel-title {
       font-size: 14px;
+      top: 85%;
     }
   }
   </style>

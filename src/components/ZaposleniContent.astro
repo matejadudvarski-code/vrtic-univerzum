@@ -2,7 +2,8 @@
 import "../styles/global.css";
 ---
 
-<section class="image-hover-cards-section">
+<section class="image-hover-cards-section" id="zaposleni">
+      
     <div class="image-container">
         <div class="title-card">
           <h3 class="title-text">Zaposleni</h3>
@@ -14,7 +15,7 @@ import "../styles/global.css";
         <!-- Card 1 -->
         <div class="col-md-4">
           <div class="card hover-card">
-            <img src="/images/Milijana-Zelen.jpg" alt="Image 1" class="card-img">
+            <img src="/images/Milijana-Zelen.jpg" alt="Image 1" class="card-img" loading="lazy">
             <div class="overlay">
               <h4 class="overlay-title">Miljana Zelen</h4>
               <p class="overlay-text">Diplomirani Vaspitivač</p>
@@ -25,7 +26,7 @@ import "../styles/global.css";
         <!-- Card 2 -->
         <div class="col-md-4">
           <div class="card hover-card">
-            <img src="/images/DPP_10321477.jpg" alt="Image 2" class="card-img">
+            <img src="/images/DPP_10321477.jpg" alt="Image 2" class="card-img" loading="lazy">
             <div class="overlay">
               <h4 class="overlay-title">Nena Ivković</h4>
               <p class="overlay-text">Osnivač</p>
@@ -36,7 +37,7 @@ import "../styles/global.css";
         <!-- Card 3 -->
         <div class="col-md-4">
           <div class="card hover-card">
-            <img src="/images/Mirjana-Vujacic.jpg" alt="Image 3" class="card-img">
+            <img src="/images/Mirjana-Vujacic.jpg" alt="Image 3" class="card-img" loading="lazy">
             <div class="overlay">
               <h4 class="overlay-title">Mirjana Vujačić</h4>
               <p class="overlay-text">Finansijski Direktor</p>
@@ -122,6 +123,7 @@ import "../styles/global.css";
     @media (max-width: 768px) {
       .row {
         flex-direction: column;
+        justify-content: center;
       }
     }
   </style>

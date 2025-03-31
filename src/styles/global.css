@@ -89,3 +89,32 @@ html, body {
   background-image: none; /* Hide the default hamburger icon */
 }
 
+@media (prefers-reduced-motion: reduce) {
+  :global(html) {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%; /* Make them fit better on mobile */
+    margin-bottom: 15px; /* Add space below each card */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Add spacing between stacked cards */
+  }
+
+  /* Prevent hero cards from overlapping the next section */
+  .hero-section {
+    padding-bottom: 50px;
+  }
+
+  /* Increase the width of "Usluge" and "Kutak za roditelje" title cards */
+  .title-card.usluge,
+  .title-card.kutak {
+    width: 200%; /* Double the width */
+    max-width: none; /* Ensure it doesn’t shrink */
+  }
+}
+
+

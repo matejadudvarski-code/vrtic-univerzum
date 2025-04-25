@@ -1,0 +1,19 @@
+---
+import "../styles/global.css";
+---
+
+<section class="container py-5">
+    <h2 class="text-center mb-5">Aktivnosti u našem vrtiću</h2>
+    {Array.from({ length: 15 }, (_, i) => (
+      <div class={`row align-items-center mb-5 ${i % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
+        <div class="col-md-6">
+          <img src={`/images/activities/activity${i + 1}.jpg`} class="img-fluid rounded" alt={`Aktivnost ${i + 1}`} />
+        </div>
+        <div class="col-md-6 text-center">
+          <h4>Aktivnost {i + 1}</h4>
+          <p>Kratak opis aktivnosti {i + 1}. Ovde ide tekst koji objašnjava šta deca rade u ovoj aktivnosti.</p>
+        </div>
+      </div>
+    ))}
+  </section>
+  

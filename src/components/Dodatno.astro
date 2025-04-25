@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+---
+
+<section class="container py-5">
+    <h2 class="text-center mb-5">Dodatne usluge i aktivnosti</h2>
+    <div class="row g-4">
+      {Array.from({ length: 7 }, (_, i) => (
+        <div class={`col-md-${i % 3 === 0 ? 12 : 6}`}>
+          <div class="card h-100">
+            <img src={`/images/services/service${i + 1}.jpg`} class="card-img-top" style="max-height: 180px; object-fit: cover;" />
+            <div class="card-body">
+              <h5 class="card-title">Usluga {i + 1}</h5>
+              <p class="card-text">Kratak opis usluge ili aktivnosti broj {i + 1}.</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  

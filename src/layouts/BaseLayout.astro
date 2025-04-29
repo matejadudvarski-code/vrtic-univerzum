@@ -18,6 +18,8 @@ import ContactSection from "../components/ContactSection.astro";
 import Quote from "../components/Quote.astro";
 import Activities from "../components/Activities.astro";
 import Dodatno from "../components/Dodatno.astro";
+import DotBackground from "../components/DotBackground.astro";
+import Divider from "../components/Divider.astro";
 ---
 
 <html lang="en">
@@ -35,19 +37,23 @@ import Dodatno from "../components/Dodatno.astro";
 
 
   <body>
+    <DotBackground />
     <Navbar />
     <Hero />
     <Quote />
+    <Divider text="Život Vrtića" />
     <Activities />
+    <Divider text="Šta Još" />
     <Dodatno />
+    <Divider text="O Nama" />
     <ContentMasonry /> 
     <ProgramCards />
     <SectionImage />
-    <UslugeContent />
     <ZaposleniContent />
     <GallerySection />
     <SectionImage2 />
     <KutakZaRoditelje />
+    <Divider text="Kontakt" />
     <ContactSection />
     <Footer />
   </body>

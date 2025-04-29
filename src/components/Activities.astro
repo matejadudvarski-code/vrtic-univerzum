@@ -2,10 +2,10 @@
 import "../styles/global.css";
 ---
 
-<section class="container py-5">
+<section class="container py-5" id="zivot">
     <h2 class="text-center mb-5">Aktivnosti u našem vrtiću</h2>
     {Array.from({ length: 15 }, (_, i) => (
-      <div class={`row align-items-center mb-5 ${i % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
+      <div class={`row align-items-center ${i % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
         <div class="col-md-6">
           <img src={`/images/activities/activity${i + 1}.jpg`} class="img-fluid rounded" alt={`Aktivnost ${i + 1}`} />
         </div>

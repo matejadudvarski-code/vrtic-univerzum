@@ -57,11 +57,18 @@ import "../styles/global.css";
 
   .navbar-nav {
     margin-right: 10px;
+    flex-wrap: wrap;
   }
 
   .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     animation: fadeIn 0.3s ease-in-out;
   }
+
+  .navbar-nav .nav-link {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
 
   /* Fade In and Out effect */
   @keyframes fadeIn {
@@ -88,6 +95,26 @@ import "../styles/global.css";
     width: 220px;
     transition: width 0.3s ease-in-out;
   }
+
+  @media (max-width: 1199px) {
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 0.85rem;
+  }
+}
 
   /* Smaller Logo on Tablets */
   @media (max-width: 768px) {

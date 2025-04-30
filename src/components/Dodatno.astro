@@ -9,7 +9,9 @@ const services = Array.from({ length: 7 }, (_, i) => ({
 ---
 
 <section class="container py-5" id="stajos">
-  <h2 class="text-center mb-5">Dodatne usluge i aktivnosti</h2>
+  <div class="title-card">
+  <h2>Dodatne usluge i aktivnosti</h2>
+  </div>
   <div class="row g-4">
     {
       services.map((service, i) => {
@@ -33,3 +35,12 @@ const services = Array.from({ length: 7 }, (_, i) => ({
     }
   </div>
 </section>
+
+
+<style>
+  h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+  }
+</style>

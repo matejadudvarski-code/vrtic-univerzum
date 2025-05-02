@@ -3,7 +3,7 @@ import "../styles/global.css";
 ---
 
 <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid d-flex align-items-center" style="margin-left: 130px !important; padding: 10px">
+  <div class="container-fluid d-flex align-items-center" style="margin-left: 130px; padding: 10px">
     
     <a class="navbar-brand d-flex align-items-center" href="/">
       <img src="/images/univerzum-logo.png" alt="Univerzum Logo" class="navbar-logo">
@@ -121,12 +121,20 @@ import "../styles/global.css";
     .navbar-logo {
       width: 180px;
     }
+
+    .container-fluid {
+      margin-left: 40px !important;
+    }
   }
 
   /* Even Smaller Logo on Mobile */
   @media (max-width: 480px) {
     .navbar-logo {
       width: 140px;
+    }
+
+    .container-fluid {
+      margin-left: 20px !important;
     }
   }
 

@@ -22,6 +22,11 @@ html, body {
   width: 100%;
 }
 
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .container-fluid {
   margin-left: 20%;
   margin-right: 10%;
@@ -134,20 +139,6 @@ html, body {
   height: 100%;
   width: 100%;
   display: block;
-}
-
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column !important;
-  }
-
-  .activity-card {
-    margin-bottom: 1.5rem;
-  }
-
-  .activity-image {
-    height: auto;
-  }
 }
 
 

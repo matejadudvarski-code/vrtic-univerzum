@@ -39,9 +39,9 @@ import "../styles/global.css";
         <li role="separator" class="divider"></li>
 
         <li class="nav-item">
-          <a href="#contact" class="btn text-white fs-5 px-4 py-2" style="background-color: #032D6C; border-radius: 20px; margin-right: 20px;">
+          <a href="#contact" class="btn text-white nav-link contact-link">
             Kontakt
-          </a>
+          </a>          
         </li> 
       </ul>
     </div>
@@ -70,6 +70,33 @@ import "../styles/global.css";
   align-items: center;
 }
 
+.navbar-nav .nav-link,
+.navbar-nav .contact-link {
+  font-size: 1.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  background-color: transparent;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Style the "Kontakt" button to look like a button but behave like a nav-link */
+.navbar-nav .contact-link {
+  background-color: #032D6C;
+  color: #fff !important;
+  margin-right: 20px;
+  text-align: center;
+  text-wrap: nowrap;
+  display: inline-flex; /* Prevents full-width block */
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Prevents full width */
+  white-space: nowrap;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin-right: 0px !important;
+}
+
   /* Fade In and Out effect */
   @keyframes fadeIn {
     from {
@@ -96,9 +123,20 @@ import "../styles/global.css";
     transition: width 0.3s ease-in-out;
   }
 
+  @media (max-width: 1440px) {
+    .container-fluid {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+  }
+
   @media (max-width: 1199px) {
   .navbar-nav .nav-link {
     font-size: 0.95rem;
+  }
+
+  .navbar-logo {
+    width: 200px;
   }
 }
 
@@ -125,6 +163,11 @@ import "../styles/global.css";
     .container-fluid {
       margin-left: 40px !important;
     }
+
+    .navbar-collapse.show .navbar-nav {
+    padding-top: 25px; /* Instead of margin */
+    transition: padding 0.3s ease-in-out;
+  }
   }
 
   /* Even Smaller Logo on Mobile */

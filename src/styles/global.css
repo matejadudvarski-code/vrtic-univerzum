@@ -24,7 +24,11 @@ html, body {
 
 section {
   width: 100%;
-  overflow-x: hidden;
+}
+
+/* Anchor scroll margin fix */
+[id] {
+  scroll-margin-top: 150px;
 }
 
 .container-fluid {

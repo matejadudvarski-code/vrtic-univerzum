@@ -78,4 +78,35 @@ import "../styles/global.css";
         font-size: 0.7rem; /* Even smaller on very small screens */
       }
     }
+
+    @media (max-width: 425px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  footer .text-start,
+  footer .text-center,
+  footer .text-end {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .text-end img,
+  footer .text-start img {
+    max-width: 60%;
+  }
+
+  .footer-text-header {
+    font-size: 1.2rem;
+  }
+
+  .footer-text {
+    font-size: 0.65rem;
+  }
+}
+
   </style>

@@ -17,7 +17,9 @@
     "astro-navbar": "^2.3.9",
     "astro-particles": "^2.10.0",
     "bootstrap": "^5.3.3",
+    "canvas-confetti": "^1.9.3",
     "react": "^19.0.0",
+    "react-canvas-confetti": "^2.0.7",
     "react-dom": "^19.0.0",
     "vrtic-univerzum": "file:"
   }

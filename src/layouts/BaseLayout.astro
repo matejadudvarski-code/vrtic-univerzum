@@ -20,6 +20,8 @@ import Activities from "../components/Activities.astro";
 import Dodatno from "../components/Dodatno.astro";
 import DotBackground from "../components/DotBackground.astro";
 import Divider from "../components/Divider.astro";
+import InfScroll from "../components/InfScroll.jsx";
+import VideoTour from "../components/VideoTour.jsx";
 ---
 
 <html lang="en">
@@ -41,8 +43,9 @@ import Divider from "../components/Divider.astro";
     <Navbar />
     <Hero />
     <Quote />
+    <VideoTour />
     <Divider text="Život Vrtića" />
-    <Activities />
+    <InfScroll client:load/>
     <Divider text="Šta Još" />
     <Dodatno />
     <Divider text="O Nama" />

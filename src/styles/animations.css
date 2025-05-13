@@ -1,0 +1,28 @@
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+  display: block;
+}
+
+section .reveal-on-scroll.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.hero-title {
+  position: relative;
+  display: inline-block;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #ffd700, #9760e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.2s ease;
+}

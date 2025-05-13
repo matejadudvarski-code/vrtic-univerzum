@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "../styles/scroll.css";
 
-const reviews = [
+const aktivnosti1 = [
     {
       name: "Jack",
       body: "Amazing experience. Highly recommend!",
@@ -34,7 +34,7 @@ const reviews = [
     },
   ];
   
-  const ReviewCard = ({ img, name, body }) => (
+  const AktivnostCard = ({ img, name, body }) => (
     <div className="card mx-3 flex-shrink-0" style={{ width: "500px" }}>
       <img src={img} className="card-img-top" alt={name} />
       <div className="card-body">
@@ -45,16 +45,25 @@ const reviews = [
   );
   
   export default function MarqueeBootstrap() {
-    // Duplicate cards for seamless looping
-    const scrollingCards = [...reviews, ...reviews];
+    const scrollingCards = [...aktivnosti1, ...aktivnosti1];
   
     return (
+      <div className="marquee-wrapper">
       <div className="marquee-container py-4">
         <div className="marquee-track d-flex">
           {scrollingCards.map((r, idx) => (
-            <ReviewCard key={idx} {...r} />
+            <AktivnostCard key={`top-${idx}`} {...r} />
           ))}
         </div>
+      </div>
+
+        <div className="marquee-container py-4 reverse">
+        <div className="marquee-track reverse-track d-flex">
+          {scrollingCards.map((r, idx) => (
+            <AktivnostCard key={`bottom-${idx}`} {...r} />
+          ))}
+        </div>
+      </div>
       </div>
     );
   }

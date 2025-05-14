@@ -3,34 +3,69 @@ import "../styles/scroll.css";
 
 const aktivnosti1 = [
     {
-      name: "Jack",
+      name: "Likovni Kabinet",
       body: "Amazing experience. Highly recommend!",
-      img: "/public/images/scroll/scroll6.jpg",
+      img: "/public/images/Umetnicki-centar.jpg",
     },
     {
-      name: "Jill",
+      name: "Muzički Kabinet",
       body: "Very helpful and professional staff.",
-      img: "/public/images/scroll/scroll6.jpg",
+      img: "/public/images/Muzicki-centar.jpg",
     },
     {
-      name: "John",
+      name: "Montesori Kabinet",
       body: "A pleasure to work with this team.",
-      img: "/public/images/scroll/scroll6.jpg",
+      img: "/public/images/montesori kabinet2_1920x1280.webp",
     },
     {
-      name: "Jane",
+      name: "Naučni Kabinet",
       body: "Top notch quality and delivery.",
-      img: "/public/images/scroll/scroll6.jpg",
+      img: "/public/images/Naucni-istrazivacki-centar.jpg",
     },
     {
-      name: "James",
+      name: "Sala za Sport",
       body: "Exceeded expectations in every way.",
-      img: "/public/images/scroll/scroll6.jpg",
+      img: "/public/images/sala_1920x1280.webp",
     },
     {
-      name: "Jenny",
+      name: "Senzorna Soba",
+      body: "Fantastic experience all around.",
+      img: "/public/images/senzorna_soba_2276x1280.jpg",
+    },
+    {
+      name: "Slana Soba",
+      body: "Fantastic experience all around.",
+      img: "/public/images/slana soba_1920x1280.webp",
+    },
+    {
+      name: "Baby Space",
+      body: "Fantastic experience all around.",
+      img: "/public/images/baby space 2_1920x1280.webp",
+    },
+    {
+      name: "Dvorište",
+      body: "Fantastic experience all around.",
+      img: "/public/images/dvoriste_1920x1280.webp",
+    },
+    {
+      name: "Logopedski Kabinet",
+      body: "Fantastic experience all around.",
+      img: "/public/images/logopedski kabinet_1920x1280.webp",
+    },
+    {
+      name: "Psihološka Podrška",
       body: "Fantastic experience all around.",
       img: "/public/images/scroll/scroll6.jpg",
+    },
+    {
+      name: "Nutricionista",
+      body: "Fantastic experience all around.",
+      img: "/public/images/scroll/scroll6.jpg",
+    },
+    {
+      name: "Kuhinja",
+      body: "Fantastic experience all around.",
+      img: "/public/images/Kuhinja_1920x1280.webp",
     },
   ];
   

@@ -9,82 +9,58 @@
     </div>
   </div>
 
-  <!-- Bottom: Image Layout -->
-  <div class="row">
-    <!-- Top Large Image -->
-    <div class="col-12 mb-3">
-      <img src="/images/crtanje_1920x1359.jpg" class="img-fluid rounded" alt="Big Image" loading="lazy">
+  <!-- Image Row: Large left, two small stacked right -->
+  <div class="row align-items-stretch image-layout">
+    <!-- Left Large Image -->
+    <div class="col-lg-8">
+      <img src="/images/crtanje_1920x1359.jpg" class="img-fluid rounded w-100 h-100 big-image" alt="Big Image" loading="lazy">
     </div>
 
-    <!-- Bottom Two Images -->
-    <div class="bottom-images">
-      <div class="col-8">
-        <img src="/images/kolaz.jpg" class="img-fluid rounded" alt="Small Image 1" loading="lazy">
-      </div>
-      <div class="col-4">
-        <img src="/images/kocke.jpg" class="img-fluid rounded" alt="Small Image 2" loading="lazy">
-      </div>
+    <!-- Right Two Stacked Images -->
+    <div class="col-lg-4 d-flex flex-column gap-3">
+      <img src="/images/kolaz.jpg" class="img-fluid rounded small-image" alt="Small Image 1" loading="lazy">
+      <img src="/images/kocke.jpg" class="img-fluid rounded small-image" alt="Small Image 2" loading="lazy">
     </div>
   </div>
 </section>
 
-
 <style>
   section {
-  padding: 50px 0;
-}
+    padding: 50px 0;
+  }
 
-h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #032D6C;
-}
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
 
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
+  .big-image {
+    object-fit: cover;
+    height: 100%;
+    max-height: 500px;
+  }
 
-img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
+  .small-image {
+    object-fit: cover;
+    height: 50%;
+    max-height: 240px;
+  }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
+    .image-layout {
+      flex-direction: column;
+    }
+
+    .big-image,
+    .small-image {
+      max-height: none;
+      height: auto;
+    }
+
+    
+  }
+
   .about-wrapper {
-    text-align: center;
+    text-align: justify;
   }
-
-  img {
-    margin-bottom: 15px;
-  }
-
-  .bottom-images {
-    flex-direction: column;
-  }
-
-  .bottom-images .col-8,
-  .bottom-images .col-4 {
-    width: 100%;
-  }
-}
-
-.bottom-images {
-  display: flex;
-  gap: 10px;
-}
-
-.bottom-images img {
-  flex: 1;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 480px) {
-  .about-wrapper {
-    margin-top: 0;
-  }
-}
-
 </style>

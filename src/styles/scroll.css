@@ -14,13 +14,13 @@
   .marquee-track {
     display: flex;
     width: fit-content;
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 60s linear infinite;
   }
 
   .reverse-track {
     display: flex;
     width: fit-content;
-    animation: scroll-right 40s linear infinite;
+    animation: scroll-right 60s linear infinite;
   }
 
   .marquee-container:hover .marquee-track,

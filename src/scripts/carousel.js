@@ -6,8 +6,8 @@ export default function carouselScript() {
       if (!carouselElement || !titleElement) return;
   
       const slides = [
-        "Senzorna Soba", "Dvorište", "Kuhinja", "Muzički Centar",
-        "Naučno-Istraživački Centar", "Prostor", "Slana Soba", "Soba za Predškolce",
+        "Senzorna Soba", "Dvorište", "Ulazni Hol", "Muzički Centar",
+        "Naučno-Istraživački Centar", "Prostor", "Senzorna Tabla", "Soba za Predškolce",
         "Sportska Sala", "Umetnički Centar", "Vrtić Univerzum"  
       ];
   
